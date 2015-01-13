@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.test.MainActivity" >
+
+    <item
+        android:id="@+id/action_profile"
+        android:orderInCategory="100"
+        android:title="Profile"
+        app:showAsAction="never"/>
+    
+    <item
+        android:id="@+id/action_have"
+        android:orderInCategory="100"
+        android:title="Have"
+        app:showAsAction="never"/>
+    
+     <item
+        android:id="@+id/action_want"
+        android:orderInCategory="100"
+        android:title="Want"
+        app:showAsAction="never"/>
+     
+     
+      <item
+        android:id="@+id/action_search"
+        android:orderInCategory="100"
+        android:title="Search"
+        app:showAsAction="never"/>
+
+</menu>

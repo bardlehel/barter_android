@@ -1,0 +1,3 @@
+todo:
+
+Reorganize code so that Fragments OnCreateView are not calling code (this function is called at beginning of loading Activity!)
