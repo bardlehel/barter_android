@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Barter.iml" filepath="$PROJECT_DIR$/Barter.iml" />
       <module fileurl="file://$PROJECT_DIR$/Scrumptious/Scrumptious.iml" filepath="$PROJECT_DIR$/Scrumptious/Scrumptious.iml" />
       <module fileurl="file://$PROJECT_DIR$/barter/barter.iml" filepath="$PROJECT_DIR$/barter/barter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/barter_android.iml" filepath="$PROJECT_DIR$/barter_android.iml" />
       <module fileurl="file://$PROJECT_DIR$/facebook/facebook.iml" filepath="$PROJECT_DIR$/facebook/facebook.iml" />
       <module fileurl="file://$PROJECT_DIR$/tests/tests.iml" filepath="$PROJECT_DIR$/tests/tests.iml" />
     </modules>

@@ -80,7 +80,8 @@ public class MainActivity extends ActionBarActivity {
     //private static final int WANTS = 3;
     private static final int CHOOSE_TOPIC = 2;
     //private static final int SETTINGS = 5;
-    private static final int SPLASH = 3;
+    private static final int LOADING = 3;
+    private static final int SPLASH = 4;
     private static final int FRAGMENT_COUNT = SPLASH + 1;
 
     private Fragment[] fragments = new Fragment[FRAGMENT_COUNT];
@@ -128,6 +129,7 @@ public class MainActivity extends ActionBarActivity {
         fragments[SPLASH]= fm.findFragmentById(R.id.login_fragment);
         fragments[MAIN]= fm.findFragmentById(R.id.main_fragment);
         fragments[HAVES] = fm.findFragmentById(R.id.have_fragment);
+        fragments[LOADING] = fm.findFragmentById(R.id.loading_fragment);
         //fragments[WANTS] = fm.findFragmentById(R.id.have_fragment);
         fragments[CHOOSE_TOPIC] = fm.findFragmentById(R.id.choose_topic_fragment);
 
@@ -170,9 +172,6 @@ public class MainActivity extends ActionBarActivity {
 
 
     private void onSessionStateChange(Session session, SessionState state, Exception exception) {
-
-
-        if (state.isOpened()) {
             PackageInfo info;
             try {
                 info = getPackageManager().getPackageInfo("com.barter.app",  PackageManager.GET_SIGNATURES);
@@ -194,29 +193,36 @@ public class MainActivity extends ActionBarActivity {
                 e.printStackTrace();
             }
             catch (Exception e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
-            }
+            } // TODO Auto-generated catch block
 
+        if (state.isOpened()) {
             final ActionBarActivity a = this;
 
             Settings.addLoggingBehavior(LoggingBehavior.REQUESTS);
             //userInfoTextView.setVisibility(View.VISIBLE);
+            final String facebookToken  = session.getAccessToken();
             Request.newMeRequest(session, new Request.GraphUserCallback() {
                 // callback after Graph API response with user object
                 @Override
                 public void onCompleted(GraphUser user, Response response) {
+
                     if (user != null) {
                         Facebook facebook = ((BarterApplication) getApplication()).facebook;
                         if (facebook != null) {
                             facebook.user = user;
                             facebook.id = user.getId();
+                            facebook.token = facebookToken;
                         }
+
+                        String[] params = new String[2];
+                        params[0] = facebook.id;
+                        params[1] = facebook.token;
 
                         //login to get accesstoken
                         ((BarterApplication) getApplication()).barterServer = new BarterServer();
                         BarterServer.ILoginListener listener = new LoginListener((BarterApplication) getApplication(), (MainActivity)a);
-                        ((BarterApplication) getApplication()).barterServer.login(facebook.id, listener);
+                        ((BarterApplication) getApplication()).barterServer.login(params, listener);
                     }
                 }
             }).executeAsync();
@@ -233,6 +239,13 @@ public class MainActivity extends ActionBarActivity {
     @Override
     public void onResume() {
         super.onResume();
+
+        Session session = Session.getActiveSession();
+        if (session != null &&
+                (session.isOpened() || session.isClosed()) ) {
+            onSessionStateChange(session, session.getState(), null);
+        }
+
         uiHelper.onResume();
     }
 
@@ -270,14 +283,14 @@ public class MainActivity extends ActionBarActivity {
 
             if (session != null && session.isOpened()) {
                 // if the session is already open, try to show the selection fragment
-               showFragment(MAIN, false);
+               showFragment(LOADING, false);
                getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-                userSkippedLogin = false;
+                userSkippedLogin = true;
             } else if (userSkippedLogin) {
-                //showFragment(MAIN, false);
+                showFragment(MAIN, false);
             } else {
                 // otherwise present the splash screen and ask the user to login, unless the user explicitly skipped.
-               // showFragment(SPLASH, false);
+                showFragment(SPLASH, false);
             }
         }
 

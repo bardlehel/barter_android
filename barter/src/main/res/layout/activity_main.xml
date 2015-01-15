@@ -31,5 +31,11 @@
             android:layout_height="match_parent"
             tools:layout="@layout/choose_topic" />
 
+    <fragment android:name="com.barter.app.LoadingFragment"
+        android:id="@+id/loading_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/choose_topic" />
+
 
   </LinearLayout>

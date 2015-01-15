@@ -15,6 +15,7 @@ import org.apache.http.NameValuePair;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.protocol.ClientContext;
 import org.apache.http.cookie.Cookie;
@@ -82,23 +83,18 @@ public class BarterServer {
     	protected String doInBackground(String... params) {
     	
     		String facebookId = params[0];
+            String facebookToken = params[1];
     		
     		cookieStore    =  new BasicCookieStore();
             localContext   = new BasicHttpContext();    
             localContext.setAttribute(ClientContext.COOKIE_STORE, cookieStore);
     		
     		HttpClient client = new DefaultHttpClient();
-    		HttpPost post = new HttpPost(serverUrl + "/api/login");
-      	  	List<NameValuePair> pairs = new ArrayList<NameValuePair>();
-      	  	pairs.add(new BasicNameValuePair("email", facebookId));
-      	  pairs.add(new BasicNameValuePair("password", facebookId));
-      	  	UrlEncodedFormEntity entity;
+    		HttpGet get = new HttpGet(serverUrl + "api/access_token?facebook-id=" + facebookId + "&facebook-token=" + facebookToken);
+
 			
       	  	try {
-				entity = new UrlEncodedFormEntity(pairs);
-				post.setEntity(entity);
-				
-				HttpResponse response = client.execute(post, localContext);
+				HttpResponse response = client.execute(get, localContext);
 				
 				BufferedReader reader = new BufferedReader(new InputStreamReader(response.getEntity().getContent(), "UTF-8"));
 				StringBuilder sb = new StringBuilder();
@@ -397,10 +393,10 @@ public class BarterServer {
     	
 	}
 	
-	public void login(String facebookId,  ILoginListener listener) {
+	public void login(String[] facebookParams,  ILoginListener listener) {
 		LoginTask task = new LoginTask();
 		task.setListener(listener);
-		task.execute(facebookId, null, null);
+		task.execute(facebookParams[0], facebookParams[1], null);
 	}
 	
 	public void getUser(String token, IGetUserListener listener) {

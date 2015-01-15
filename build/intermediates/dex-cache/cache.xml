@@ -1,59 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<pre-dex-items>
+<items version="2" >
 
     <item
-        dex="/home/dorian/adt_workspace/Barter/barter/build/intermediates/pre-dexed/debug/classes-e316fc145966559cf0b11207d8e5637016f9f2d2.jar"
-        jar="/home/dorian/adt_workspace/Barter/barter/build/intermediates/exploded-aar/Barter/facebook/unspecified/classes.jar"
+        jar="C:\Users\george\lehel\barter_android\barter\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\classes.jar"
         jumboMode="false"
-        revision="19.1.0"
-        sha1="7e79c172d8a5cd18a8b4ee8c89c7c794146d3eb9"/>
+        revision="21.1.2"
+        sha1="686344a780033e4ba22b926cd225f8d4941247e6">
+        <dex dex="C:\Users\george\lehel\barter_android\barter\build\intermediates\pre-dexed\debug\classes-2329e73c40b4433b51832d0fd0b11338563bbe5b.jar" />
+    </item>
     <item
-        dex="/home/dorian/adt_workspace/Barter/barter/build/intermediates/pre-dexed/debug/internal_impl-20.0.0-5fe343ec0e94f9e1c7faf883de417c747034b91b.jar"
-        jar="/home/dorian/adt_workspace/Barter/barter/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/libs/internal_impl-20.0.0.jar"
+        jar="C:\Users\george\lehel\barter_android\barter\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.0\classes.jar"
         jumboMode="false"
-        revision="19.1.0"
-        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d"/>
+        revision="21.1.2"
+        sha1="95fd37732ec852e99f07eeb516a3650172f1d136">
+        <dex dex="C:\Users\george\lehel\barter_android\barter\build\intermediates\pre-dexed\debug\classes-f8ffb8d93a9ae4a8844242a92641a3331b9e52a8.jar" />
+    </item>
     <item
-        dex="/home/dorian/adt_workspace/Barter/barter/build/intermediates/pre-dexed/debug/classes-2a86ce03b9c7d080339ebf027ca3615d9251da31.jar"
-        jar="/home/dorian/adt_workspace/Barter/barter/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/classes.jar"
+        jar="C:\Users\george\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
         jumboMode="false"
-        revision="19.1.0"
-        sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>
+        revision="21.1.2"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
+        <dex dex="C:\Users\george\lehel\barter_android\Scrumptious\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-3ca5a45031fde925b3b31d8441cde7550fbe568d.jar" />
+    </item>
     <item
-        dex="/home/dorian/adt_workspace/Barter/Scrumptious/build/intermediates/pre-dexed/debug/internal_impl-20.0.0-ac68381a8e2a256885c30935170ff3e307d23ce6.jar"
-        jar="/home/dorian/adt_workspace/Barter/Scrumptious/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/libs/internal_impl-20.0.0.jar"
+        jar="C:\Users\george\lehel\barter_android\Scrumptious\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\libs\internal_impl-20.0.0.jar"
         jumboMode="false"
-        revision="19.1.0"
-        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d"/>
+        revision="21.1.2"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
+        <dex dex="C:\Users\george\lehel\barter_android\Scrumptious\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-0353336dbd8989bd09c655fbf19dfa50e24b0d08.jar" />
+    </item>
     <item
-        dex="/home/dorian/adt_workspace/Barter/barter/build/intermediates/pre-dexed/debug/classes-c628a3ef1a2702ea5ff47b116abe4e5beeed2275.jar"
-        jar="/home/dorian/adt_workspace/Barter/barter/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/classes.jar"
+        jar="C:\Users\george\lehel\barter_android\Scrumptious\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\classes.jar"
         jumboMode="false"
-        revision="19.1.0"
-        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef"/>
+        revision="21.1.2"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
+        <dex dex="C:\Users\george\lehel\barter_android\Scrumptious\build\intermediates\pre-dexed\debug\classes-6a5001977f530440acc9210953908b3346d0984f.jar" />
+    </item>
     <item
-        dex="/home/dorian/adt_workspace/Barter/barter/build/intermediates/pre-dexed/debug/bolts-android-1.1.2-f71aacf0406ad5a91d1067c3accf5663c391a3a5.jar"
-        jar="/home/dorian/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.2/91c20388c9a45f62b5ed8fe0502bb76ff6251fc7/bolts-android-1.1.2.jar"
+        jar="C:\Users\george\lehel\barter_android\barter\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\libs\internal_impl-21.0.0.jar"
         jumboMode="false"
-        revision="19.1.0"
-        sha1="91c20388c9a45f62b5ed8fe0502bb76ff6251fc7"/>
+        revision="21.1.2"
+        sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0">
+        <dex dex="C:\Users\george\lehel\barter_android\barter\build\intermediates\pre-dexed\debug\internal_impl-21.0.0-bb9550eb2264abbe6607e8834ddea97584dbb5fe.jar" />
+    </item>
     <item
-        dex="/home/dorian/adt_workspace/Barter/Scrumptious/build/intermediates/pre-dexed/debug/classes-a385942bc21210751b9034f3bc28f77873f69344.jar"
-        jar="/home/dorian/adt_workspace/Barter/Scrumptious/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/classes.jar"
+        jar="C:\Users\george\lehel\barter_android\barter\build\intermediates\exploded-aar\barter_android\facebook\unspecified\classes.jar"
         jumboMode="false"
-        revision="19.1.0"
-        sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>
+        revision="21.1.2"
+        sha1="fe56e949a3ceb8d9db2165c396af1197b1092876">
+        <dex dex="C:\Users\george\lehel\barter_android\barter\build\intermediates\pre-dexed\debug\classes-c7f5bdb52e1ccaf95f4eeb57c47de9922b129f21.jar" />
+    </item>
     <item
-        dex="/home/dorian/adt_workspace/Barter/barter/build/intermediates/pre-dexed/debug/support-annotations-20.0.0-46f6134d1f35eff2dda1922ba76c86ba2f754461.jar"
-        jar="/apps/android-sdk/sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar"
+        jar="C:\Users\george\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.1.2\91c20388c9a45f62b5ed8fe0502bb76ff6251fc7\bolts-android-1.1.2.jar"
         jumboMode="false"
-        revision="19.1.0"
-        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa"/>
+        revision="21.1.2"
+        sha1="91c20388c9a45f62b5ed8fe0502bb76ff6251fc7">
+        <dex dex="C:\Users\george\lehel\barter_android\barter\build\intermediates\pre-dexed\debug\bolts-android-1.1.2-e54a490733c7e00708ea2ddc711a69ab2136dc11.jar" />
+    </item>
     <item
-        dex="/home/dorian/adt_workspace/Barter/Scrumptious/build/intermediates/pre-dexed/debug/classes-00b7b28fb736bed6953373056c06b749ea90bd5a.jar"
-        jar="/home/dorian/adt_workspace/Barter/Scrumptious/build/intermediates/exploded-aar/Barter/facebook/unspecified/classes.jar"
+        jar="C:\Users\george\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.0\support-annotations-21.0.0.jar"
         jumboMode="false"
-        revision="19.1.0"
-        sha1="7e79c172d8a5cd18a8b4ee8c89c7c794146d3eb9"/>
+        revision="21.1.2"
+        sha1="1a578b9607b36266c63d43a4fa0ab5664dbe911e">
+        <dex dex="C:\Users\george\lehel\barter_android\barter\build\intermediates\pre-dexed\debug\support-annotations-21.0.0-5da03caaf4a2f02d408a2a1a7fd78157396df69b.jar" />
+    </item>
+    <item
+        jar="C:\Users\george\lehel\barter_android\Scrumptious\build\intermediates\exploded-aar\barter_android\facebook\unspecified\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="fe56e949a3ceb8d9db2165c396af1197b1092876">
+        <dex dex="C:\Users\george\lehel\barter_android\Scrumptious\build\intermediates\pre-dexed\debug\classes-e05214db6bab2815faead2fc9e14e533f3729ade.jar" />
+    </item>
 
-</pre-dex-items>
+</items>

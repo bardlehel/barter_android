@@ -18,7 +18,7 @@ public class Facebook implements Serializable {
 	public Session session = null;
 	public GraphUser user = null;
 	public String id;
-	//public String token;
+	public String token;
 	
 	public Facebook(Session s) {
 		session = s;

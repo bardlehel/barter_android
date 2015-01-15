@@ -1,0 +1,6 @@
+C:\Users\george\lehel\barter_android\Scrumptious\build\intermediates\classes\debug
+C:\Users\george\lehel\barter_android\Scrumptious\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-3ca5a45031fde925b3b31d8441cde7550fbe568d.jar
+C:\Users\george\lehel\barter_android\Scrumptious\build\intermediates\pre-dexed\debug\bolts-android-1.1.2-e54a490733c7e00708ea2ddc711a69ab2136dc11.jar
+C:\Users\george\lehel\barter_android\Scrumptious\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-0353336dbd8989bd09c655fbf19dfa50e24b0d08.jar
+C:\Users\george\lehel\barter_android\Scrumptious\build\intermediates\pre-dexed\debug\classes-e05214db6bab2815faead2fc9e14e533f3729ade.jar
+C:\Users\george\lehel\barter_android\Scrumptious\build\intermediates\pre-dexed\debug\classes-6a5001977f530440acc9210953908b3346d0984f.jar
